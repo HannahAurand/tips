@@ -1,25 +1,9 @@
-# README
+# tips 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A web app that helps junior developer applicants practice for the technical interview process.
 
-Things you may want to cover:
+Utilizes: 
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-# tips
+1. A blog to share interview experiences
+2. Whiteboarding questions
+3. Technical Interview Questions
