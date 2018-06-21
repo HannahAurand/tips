@@ -1,0 +1,2 @@
+class TechnicalQuestion < ApplicationRecord
+end

@@ -1,0 +1,2 @@
+class WhiteboardQuestion < ApplicationRecord
+end
