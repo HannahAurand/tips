@@ -1,1 +1,4 @@
-<h1>Blog Index Page</h1>
+<% @blogs.each do |blog| %>
+    <h2><%= blog.title %></h2>
+    <p><%= blog.story %></p>
+<% end %>
