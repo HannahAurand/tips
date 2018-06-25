@@ -1,4 +1,5 @@
 <% @blogs.each do |blog| %>
     <h2><%= blog.title %></h2>
-    <p><%= blog.story %></p>
+    <p><%= truncate(blog.story, :length => 200) %></p>
 <% end %>
+
