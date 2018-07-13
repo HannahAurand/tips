@@ -21,11 +21,20 @@ class BlogsController < ApplicationController
         end
     end
 
-    def update
-
+    def edit 
     end
 
-    def edit
+    def update 
+        if @blog.update(blog_params)
+            redirect_to blog_path(@blog)
+        else
+            render 'edit'
+        end
+    end
+
+    def destroy 
+        @blog.destroy
+        redirect_to root_path
     end
 
     private

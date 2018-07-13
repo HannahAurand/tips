@@ -1,5 +1,5 @@
 <%= simple_form_for @blog do |f| %>
   <%= f.input :title %>
-  <%= f.input :story %>
+  <%= f.input :story, as: :text %>
   <%= f.button :submit %>
 <% end %>

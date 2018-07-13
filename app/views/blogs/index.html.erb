@@ -1,7 +1,7 @@
 <h1 class="storiesPageHeadline">Stories</h1>
 
 <% @blogs.each do |blog| %>
-    <h2><%= blog.title %></h2>
+    <h2><%= link_to blog.title, blog %></h2>
     <p><%= truncate(blog.story, :length => 200) %></p>
 <% end %>
 
