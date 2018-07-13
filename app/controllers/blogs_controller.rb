@@ -1,6 +1,11 @@
 class BlogsController < ApplicationController
+    before_action :find_blog, only: [:show, :edit, :update, :destroy]
+
     def index
         @blogs = Blog.all.order("created_at DESC")
+    end
+
+    def show
     end
 
     def new
@@ -16,9 +21,21 @@ class BlogsController < ApplicationController
         end
     end
 
+    def update
+
+    end
+
+    def edit
+    end
+
     private
 
     def blog_params
         params.require(:blog).permit(:title, :story)
     end
+
+    def find_blog
+        @blog = Blog.find(params[:id])
+    end
+
 end
