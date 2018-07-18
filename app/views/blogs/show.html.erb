@@ -2,5 +2,7 @@
 <p class="prewrapWhiteSpace"><%= @blog.story %></p>
 
 <%= link_to "Back", root_path %>
-<%= link_to "Edit", edit_blog_path(@blog) %>
-<%= link_to "Delete", blog_path(@blog), method: :delete, data: { confirm: "Are you sure?"}%>
+<% if current_user.id == @blog.user.id %>
+    <%= link_to "Edit", edit_blog_path(@blog) %>
+    <%= link_to "Delete", blog_path(@blog), method: :delete, data: { confirm: "Are you sure?"}%>
+<% end %>
